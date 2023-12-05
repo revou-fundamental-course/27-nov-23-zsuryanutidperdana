@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Dana">
+    <meta name ="description" content = "This page is submitted for fulfilling one of the RevoU Certification requirement.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./css/revou.png" type="image/x-icon">
+</head>
+<body>
+    <!--Background, CSS in Body-->
+    <div id="main-body">
+    <!--Header-->
+        <div id="header">
+            <h1>Welcome to <a id="brand">"The Calculator"</a></h1>
+            <p>Hi! Welcome to my Mini Project called <a id="brand">"The Calculator"</a></p>
+            <p>This is the version 1.0 of the Mini Project. You can use this version to Calculate the Circumference and the Area of a Triangle</p>
+        </div>
+        <!--Menu-->
+        <div id="menu">
+            <h2 id="menuTri">Triangle</h2>
+        </div>
+        <!--Question Body & Image-->
+        <div id="triangle">
+        <img src="https://www.splashlearn.com/math-vocabulary/wp-content/uploads/2022/05/isosceles_triangles-6-01.png" alt="Picture of a Triangle">
+        </div>
+        <!--Input-->
+        <h3 style="text-align:center">Please Select the Following Property of the Shape You Want to Calculate:</h3>
+        <div id="menu">
+            <button class="button" id="buttonArea" onclick="showTextArea()">Area</button>
+            <button class="button" id="buttonCirc" onclick="showTextCirc()">Circumference</button>
+        </div>
+        <!--Division for Area-->
+        <div id="propertyArea" style="display:none">
+            <p>Area of Triangle Formula:</p>
+            <p>Area = 0.5 x Base x Height</p>
+            <h2> Calculate the Area of Triangle</h2>
+            <p>Given:</p>
+            <ul>
+                <li>OB = Base</li>
+                <li>A ⊥ OB = Height</li>
+            </ul>
+            <form id="myFormArea">
+                <p class="formInput">
+                    <label for="height">Height: </label>
+                    <input type="number" step="any" min="0" id="height" value="value" placeholder="Type your number" required>
+                </p>
+                <p class="formInput">
+                    <label for="base">Base: </label>
+                    <input type="number" step="any" min="0" id="base" value="value" placeholder="Type your number" required>      
+                </p> 
+                <br>       
+                <button class="button" id="buttonCalcArea" onclick="calculateArea()">Calculate</button>  
+                <br>
+                <br>
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+        <!--Division for Circumference-->
+
+        <div id="propertyCirc" style="display:none">
+            <p>Circumference of Triangle Formula:</p>
+            <p>Circumference = Line 1 + Line 2 + Line 3</p>
+            <h2> Calculate the Circumference of Triangle</h2>
+            <p>Given:</p>
+            <ul>
+                <li>AO = Line 1</li>
+                <li>OB = Line 2</li>
+                <li>AB = Line 3</li>
+            </ul>
+            <form id="myFormCirc">
+                <p class="formInput">
+                    <label for="line1">AO: </label>
+                    <input type="number" step="any" min="0" id="line1" value="value" placeholder="Type your number" required>
+                </p>
+                <p class="formInput">
+                    <label for="line2">OB: </label>
+                    <input type="number" step="any" min="0" id="line2" value="value" placeholder="Type your number" required>
+                </p>
+                <p class="formInput">
+                    <label for="line3">AB: </label>
+                    <input type="number" step="any" min="0" id="line3" value="value" placeholder="Type your number" required>
+                </p>               
+                <button class="button" id="buttonCalcCirc" onclick="calculateCirc()">Calculate</button>  
+                <br>
+                <br>
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+    <!--Define script source-->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

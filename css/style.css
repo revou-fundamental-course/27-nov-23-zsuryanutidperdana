@@ -1,0 +1,86 @@
+/* Style Header */
+#header{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px
+}
+#brand{
+    font-style: italic;
+}
+h1{
+    width: 100%;
+    background-color:black;
+    inline-size: 70%;
+    border-block-end: 10px white solid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/* Style Menu */
+div#menu{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: inline-block;
+}
+/* Style Background */
+body{
+    background-color: #333;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+#main-body{
+    width: flex;
+    max-width: 800px;
+    margin: auto;
+    border-style: solid;
+    padding: 20px;
+}
+/* Style Question Body & Image */
+#triangle{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    background-color: white;  
+}
+/* Style Input */
+form{
+    display: table;
+}
+.formInput{
+    display: table-row;
+    width:100%;
+}
+label{
+    display: table-cell;
+}
+input{
+    display: table-cell;
+    margin-bottom: 5px;
+}
+input[type=number], input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Style Button */
+.button, #menuTri, input[type=reset]{
+    background-color: black;
+    border:2px;
+    color:white;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
